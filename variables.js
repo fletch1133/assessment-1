@@ -9,7 +9,7 @@ let myName = "Anthony Fletcher";
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 //CODE HERE
-let faveNum = "24";   
+let faveNum = 24;   
 // We must set the value of faveNum to equal our favorite number. In my case, it is 24.
 
 //////////////////PROBLEM 3////////////////////

@@ -50,9 +50,11 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-for (i = 0; i >= 0; i++) {
-    console.log(`totalAcres`)
+let totalAcres = 0
+for (i = 0; i < 7; i++) {
+    totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i]
 }
+console.log(totalAcres)
 // my first step was to create a for loop and have it greater than or equal to zero since we are trying to find out the total numbers of acres picked. i then proceeded to sonsole log total acres but it is undefined and i did not know how to define it.
 
 
@@ -111,10 +113,11 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
-while(totalAcres > 0) {
-   console.log("days")
-    totalAcres--
+while(acresleft > 0) {
+    days++
+    acresLeft -= averageDailyAcres
 }
+console.log(days)
 // I first created a while loop and and set it to greater than zero since there were still acres left to be picked. I then tried to console log the number of days left to pick the remaining acres.
 
 
@@ -144,11 +147,19 @@ while(totalAcres > 0) {
 */
 
 // CODE HERE
-// Was unable to solve
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
 
+ let fujiTons = []
+ let galaTons = []
+ let pinkTons = []
+
+ for(i = 0, i < 7, i++){
+   fugiTons.push(fujiAcres[i] * 6.5)
+   galaTons.push(galaAcres[i] * 6.5)
+   pinkTons.push(pinkAcres[i] * 6.5)
+ }
+console.log(fugiTons)
+console.log(galaTons)
+console.log(pinkTons)
 
 
 
@@ -172,11 +183,18 @@ while(totalAcres > 0) {
 
 // CODE HERE 
 // Was unable to solvce problem since there was information needed from the previous section
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+ let fujiPounds = 0
+ let galaPounds = 0
+ let pinkPounds = 0
 
-
+ for(i = 0; i < 7; i++){
+    fujiPounds += fujiTons[i] * 2000
+    galaPounds += galaTons[i] * 2000
+    pinkPounds += pinkTons[i] * 2000
+ }
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
 
 
 
@@ -198,11 +216,11 @@ while(totalAcres > 0) {
 */
 
 // CODE HERE
-// Was unable to solvce problem since there was information needed from the previous section
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+
+ let fujiProfit = fujiPounds * fujiPrice
+ let galaProfit = galaPounds * galaPrice
+ let pinkProfit = pinkPounds * pinkPrice
 
 
 
@@ -220,4 +238,4 @@ while(totalAcres > 0) {
 */
 
 // CODE HERE
-// Was unable to solvce problem since there was information needed from the previous section
+let totalProfit = fujiProfit + galaProfit + pinkProfit = 
